@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Ucha — Dari Rio 💕</title>
+    <meta name="description" content="Digital love experience dari Rio Alfiansyah untuk Uswatun Hasanah (Ucha). Sejak 22 Februari 2026.">
+    <meta name="theme-color" content="#e8a0b4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== A. PRELOADER ==================== -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-heart">
+                <svg viewBox="0 0 100 100" class="heart-svg">
+                    <path d="M50 88 C25 65, 0 45, 0 28 C0 10, 15 0, 28 0 C38 0, 46 5, 50 15 C54 5, 62 0, 72 0 C85 0, 100 10, 100 28 C100 45, 75 65, 50 88Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <p class="preloader-text">Menyiapkan sesuatu yang indah untuk Ucha...</p>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FLOATING HEARTS CONTAINER ==================== -->
+    <div id="floating-hearts" class="floating-hearts"></div>
+
+    <!-- ==================== B. STICKY NAVIGATION ==================== -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">💕 R & U</a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#story" class="nav-link" data-section="story">Cerita</a>
+                <a href="#counter" class="nav-link" data-section="counter">Waktu Kita</a>
+                <a href="#timeline" class="nav-link" data-section="timeline">Kenangan</a>
+                <a href="#letter" class="nav-link" data-section="letter">Surat</a>
+                <a href="#promises" class="nav-link" data-section="promises">Janji</a>
+                <a href="#surprise" class="nav-link" data-section="surprise">Kejutan</a>
+            </nav>
+            <div class="nav-right">
+                <button class="music-toggle" id="music-toggle" aria-label="Toggle music">
+                    <svg class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <circle cx="18" cy="16" r="3"/>
+                    </svg>
+                    <div class="equalizer" id="equalizer">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== C. HERO CINEMATIC SECTION ==================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-effects">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            <div class="glow-orb glow-orb-3"></div>
+            <div class="sparkle-container" id="sparkle-container"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">A Digital Love Letter</div>
+            <h1 class="hero-headline reveal">
+                Untuk <span class="highlight-name">Ucha</span>, perempuan paling spesial di hidupku.
+            </h1>
+            <p class="hero-subheadline reveal">
+                Dari <strong>Rio Alfiansyah</strong>, untuk <strong>Uswatun Hasanah</strong>.
+            </p>
+            <p class="hero-date reveal">Sejak 22 Februari 2026</p>
+            <div class="hero-buttons reveal">
+                <a href="#story" class="btn btn-primary">
+                    <span>Mulai Cerita Kita</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="btn btn-secondary" onclick="openLetterModal()">
+                    <span>Buka Surat Cinta</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll ke bawah</span>
+        </div>
+    </section>
+
+    <!-- ==================== D. LOVE IDENTITY DASHBOARD ==================== -->
+    <section id="identity" class="section identity-section">
+        <div class="container">
+            <h2 class="section-title reveal">Identitas Cinta Kita</h2>
+            <p class="section-subtitle reveal">Cerita yang sedang kita jaga bersama.</p>
+            <div class="identity-grid">
+                <div class="identity-card reveal" data-delay="0">
+                    <div class="identity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Pengirim</h3>
+                    <p class="identity-name">Rio Alfiansyah</p>
+                    <span class="identity-badge">Yang selalu sayang</span>
+                </div>
+                <div class="identity-card reveal" data-delay="100">
+                    <div class="identity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Penerima</h3>
+                    <p class="identity-name">Uswatun Hasanah</p>
+                    <span class="identity-badge">Yang paling spesial</span>
+                </div>
+                <div class="identity-card reveal" data-delay="200">
+                    <div class="identity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3>Nama Panggilan</h3>
+                    <p class="identity-name">Ucha</p>
+                    <span class="identity-badge">Manis sekali</span>
+                </div>
+                <div class="identity-card reveal" data-delay="300">
+                    <div class="identity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3>Mulai Bersama</h3>
+                    <p class="identity-name">22 Februari 2026</p>
+                    <span class="identity-badge">Awal cerita kita</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== E. LOVE COUNTER ADVANCED ==================== -->
+    <section id="counter" class="section counter-section">
+        <div class="container">
+            <h2 class="section-title reveal">Waktu Kita</h2>
+            <p class="counter-status reveal" id="counter-status">Kita sudah bersama selama...</p>
+            <div class="counter-grid reveal">
+                <div class="counter-card">
+                    <div class="counter-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="ring-bg"/>
+                            <circle cx="60" cy="60" r="54" class="ring-fill" id="ring-days"/>
+                        </svg>
+                        <div class="counter-value" id="counter-days">00</div>
+                    </div>
+                    <span class="counter-label">Hari</span>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="ring-bg"/>
+                            <circle cx="60" cy="60" r="54" class="ring-fill" id="ring-hours"/>
+                        </svg>
+                        <div class="counter-value" id="counter-hours">00</div>
+                    </div>
+                    <span class="counter-label">Jam</span>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="ring-bg"/>
+                            <circle cx="60" cy="60" r="54" class="ring-fill" id="ring-minutes"/>
+                        </svg>
+                        <div class="counter-value" id="counter-minutes">00</div>
+                    </div>
+                    <span class="counter-label">Menit</span>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="ring-bg"/>
+                            <circle cx="60" cy="60" r="54" class="ring-fill" id="ring-seconds"/>
+                        </svg>
+                        <div class="counter-value" id="counter-seconds">00</div>
+                    </div>
+                    <span class="counter-label">Detik</span>
+                </div>
+            </div>
+            <p class="counter-microcopy reveal">Setiap detik bersamamu adalah hadiah terindah.</p>
+        </div>
+    </section>
+
+    <!-- ==================== F. STORY SECTION ==================== -->
+    <section id="story" class="section story-section">
+        <div class="container">
+            <h2 class="section-title reveal">Cerita Kita</h2>
+            <div class="story-content">
+                <div class="story-block reveal">
+                    <div class="story-quote-card">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p>Ucha, kamu bukan hanya seseorang yang hadir di hidupku. Kamu adalah alasan sederhana kenapa banyak hari terasa lebih tenang, lebih hangat, dan lebih berarti.</p>
+                    </div>
+                </div>
+                <div class="story-block reveal">
+                    <p>Sejak hari pertama kita bersama, <span class="highlight-name">22 Februari 2026</span>, aku belajar bahwa cinta bukan hanya soal perasaan yang besar — tapi juga soal hadirnya <span class="highlight-name">Uswatun Hasanah</span> di setiap momen kecil yang ternyata jadi hal paling berharga.</p>
+                </div>
+                <div class="story-block reveal">
+                    <p>Kamu datang dengan senyum yang membuatku yakin bahwa dunia ini masih punya banyak kebaikan. Kamu mengajariku arti kesabaran, kelembutan, dan bagaimana rasanya benar-benar peduli pada seseorang.</p>
+                </div>
+                <div class="story-block reveal">
+                    <div class="story-quote-card accent">
+                        <p>Aku tidak pernah berjanji akan menjadi yang terbaik. Tapi aku berjanji akan selalu berusaha menjadi yang terbaik <em>untukmu</em>.</p>
+                    </div>
+                </div>
+                <div class="story-block reveal">
+                    <p>Untuk <span class="highlight-name">Ucha</span> — terima kasih sudah menjadi rumah yang paling nyaman untuk pulang. Cerita kita baru dimulai, dan aku ingin terus menulisnya bersamamu, satu hari demi satu hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== G. TIMELINE HUBUNGAN ==================== -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <h2 class="section-title reveal">Perjalanan Kita</h2>
+            <p class="section-subtitle reveal">Setiap langkah, setiap momen — semuanya berarti.</p>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item reveal" data-delay="0">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">22 Februari 2026</span>
+                        <h3>Awal Cerita Kita</h3>
+                        <p>Hari pertama kita bersama. Hari yang mengubah segalanya. Sejak saat itu, dunia terasa sedikit lebih indah.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="150">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Hari-hari Setelahnya</span>
+                        <h3>Belajar Saling Memahami</h3>
+                        <p>Setiap percakapan, setiap tawa, setiap diam yang nyaman — kita belajar memahami satu sama lain dengan lebih dalam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="300">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Setiap Momen Kecil</span>
+                        <h3>Senyum, Perhatian, dan Rasa yang Tumbuh</h3>
+                        <p>Cinta kita tumbuh dari hal-hal kecil — senyum pagi, pesan singkat, perhatian tanpa diminta, dan rasa sayang yang semakin dalam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="450">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Masa Depan</span>
+                        <h3>Harapan untuk Terus Bersama</h3>
+                        <p>Aku berharap kita bisa terus bersama — melewati apa pun, merayakan segalanya, dan tumbuh menjadi versi terbaik dari diri kita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== H. GALLERY MEMORIES PRO ==================== -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title reveal">Galeri Kenangan</h2>
+            <p class="section-subtitle reveal">Momen-momen indah yang ingin kita abadikan.</p>
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="sweet">Momen Manis</button>
+                <button class="filter-btn" data-filter="favorite">Favorit</button>
+                <button class="filter-btn" data-filter="upcoming">Nanti Kita Isi</button>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" data-category="sweet">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Momen pertama kita</span>
+                    </div>
+                    <div class="gallery-caption">Momen Manis</div>
+                </div>
+                <div class="gallery-item" data-category="favorite">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Senyum favoritku</span>
+                    </div>
+                    <div class="gallery-caption">Favorit</div>
+                </div>
+                <div class="gallery-item" data-category="sweet">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Hari yang indah</span>
+                    </div>
+                    <div class="gallery-caption">Momen Manis</div>
+                </div>
+                <div class="gallery-item" data-category="upcoming">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Kenangan kita akan hadir di sini.</span>
+                    </div>
+                    <div class="gallery-caption">Nanti Kita Isi</div>
+                </div>
+                <div class="gallery-item" data-category="favorite">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Bersama selalu</span>
+                    </div>
+                    <div class="gallery-caption">Favorit</div>
+                </div>
+                <div class="gallery-item" data-category="upcoming">
+                    <div class="gallery-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Kenangan kita akan hadir di sini.</span>
+                    </div>
+                    <div class="gallery-caption">Nanti Kita Isi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== I. DIGITAL LOVE LETTER MODAL ==================== -->
+    <section id="letter" class="section letter-section">
+        <div class="container">
+            <div class="letter-envelope reveal">
+                <div class="envelope-body">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-letter-preview">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="envelope-seal">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                </div>
+                <h3>Surat Cinta Digital</h3>
+                <p>Sebuah surat tulus dari Rio untuk Ucha</p>
+                <button class="btn btn-primary" onclick="openLetterModal()">
+                    <span>Buka Surat Untuk Ucha</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letter Modal -->
+    <div class="modal-overlay" id="letter-modal">
+        <div class="modal-content letter-modal-content">
+            <button class="modal-close" onclick="closeLetterModal()" aria-label="Tutup surat">&times;</button>
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <div class="letter-from">Dari: Rio Alfiansyah</div>
+                    <div class="letter-to">Untuk: Uswatun Hasanah (Ucha)</div>
+                    <div class="letter-date">22 Februari 2026 — dan seterusnya</div>
+                </div>
+                <div class="letter-body" id="letter-body">
+                    <p class="letter-salutation">Ucha sayang,</p>
+                    <p>Aku tidak tahu harus mulai dari mana menulis surat ini. Tapi aku tahu satu hal — aku ingin kamu tahu betapa berharganya kamu bagiku.</p>
+                    <p>Sejak hari pertama kita bersama, kamu telah mengubah banyak hal dalam hidupku. Bukan dengan hal-hal yang besar atau dramatis, tapi dengan kehadiranmu yang tulus, senyummu yang hangat, dan cara kamu memperhatikan hal-hal kecil yang bahkan tidak aku sadari.</p>
+                    <p>Kamu adalah orang yang membuatku percaya bahwa cinta yang baik itu ada — cinta yang tidak perlu berisik, tidak perlu sempurna, tapi cukup hadir, cukup jujur, dan cukup tulus.</p>
+                    <p>Aku tahu aku tidak sempurna. Aku masih belajar, masih sering salah, masih kadang tidak mengerti. Tapi satu hal yang tidak akan pernah berubah — rasa sayangku untukmu, <strong>Uswatun Hasanah</strong>, adalah hal paling nyata yang pernah aku rasakan.</p>
+                    <p>Terima kasih sudah menjadi <em>Ucha</em> — perempuan yang sabar, yang baik, yang selalu membuat hari-hariku terasa lebih ringan hanya dengan menjadi dirimu sendiri.</p>
+                    <p>Aku berjanji akan terus menjaga ini. Menjaga kamu, menjaga kita, menjaga cerita ini — sebaik mungkin yang aku bisa.</p>
+                    <p class="letter-closing">Dengan seluruh hatiku,</p>
+                    <p class="letter-signature">Rio Alfiansyah 💕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== J. PROMISE CARDS ==================== -->
+    <section id="promises" class="section promises-section">
+        <div class="container">
+            <h2 class="section-title reveal">Janji Untukmu</h2>
+            <p class="section-subtitle reveal">Hal-hal kecil yang ingin aku pegang teguh.</p>
+            <div class="promises-grid">
+                <div class="promise-card reveal" data-delay="0">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <p>Aku akan menjaga hatimu sebaik mungkin.</p>
+                </div>
+                <div class="promise-card reveal" data-delay="100">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    </div>
+                    <p>Aku akan terus belajar memahami kamu.</p>
+                </div>
+                <div class="promise-card reveal" data-delay="200">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <p>Aku ingin menjadi tempat yang aman untukmu pulang.</p>
+                </div>
+                <div class="promise-card reveal" data-delay="300">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <p>Aku akan merayakan hal-hal kecil tentang kita.</p>
+                </div>
+                <div class="promise-card reveal" data-delay="400">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    </div>
+                    <p>Aku ingin tumbuh bersamamu, pelan-pelan tapi sungguh-sungguh.</p>
+                </div>
+                <div class="promise-card reveal" data-delay="500">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <p>Aku akan berusaha membuatmu merasa dicintai setiap hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== K. SURPRISE MESSAGE GENERATOR ==================== -->
+    <section id="surprise" class="section surprise-section">
+        <div class="container">
+            <h2 class="section-title reveal">Kejutan untuk Ucha</h2>
+            <p class="section-subtitle reveal">Kadang, semua yang kamu butuhkan adalah satu kata manis.</p>
+            <div class="surprise-container reveal">
+                <div class="surprise-card">
+                    <div class="surprise-sparkles" id="surprise-sparkles"></div>
+                    <div class="surprise-message" id="surprise-message">
+                        <p>Klik tombol di bawah untuk mendapatkan pesan spesial 💕</p>
+                    </div>
+                    <button class="btn btn-primary surprise-btn" id="surprise-btn">
+                        <span>Klik kalau Ucha butuh senyum</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== L. MUSIC PLAYER MINI ==================== -->
+    <div class="music-player" id="music-player">
+        <div class="music-player-inner">
+            <button class="music-play-btn" id="music-play-btn" aria-label="Play/Pause music">
+                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+            </button>
+            <div class="music-info">
+                <span class="music-status" id="music-status">Musik siap dinyalakan</span>
+                <div class="music-eq">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <audio id="bg-music" loop preload="none">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- ==================== M. FINAL SECTION ==================== -->
+    <section id="final" class="section final-section">
+        <div class="final-bg-effects">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="final-content">
+                <div class="final-heart reveal">
+                    <svg viewBox="0 0 100 100" class="heart-svg large">
+                        <path d="M50 88 C25 65, 0 45, 0 28 C0 10, 15 0, 28 0 C38 0, 46 5, 50 15 C54 5, 62 0, 72 0 C85 0, 100 10, 100 28 C100 45, 75 65, 50 88Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 class="final-headline reveal">I love you, Ucha.</h2>
+                <p class="final-subtext reveal">Dari Rio Alfiansyah, untuk Uswatun Hasanah.</p>
+                <p class="final-closing reveal">Sejak 22 Februari 2026, dan semoga terus menjadi cerita yang indah.</p>
+                <button class="btn btn-secondary back-to-top reveal" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+                    <span>Kembali ke Atas</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>Dibuat dengan 💕 oleh Rio Alfiansyah untuk Ucha</p>
+            <p class="footer-small">22 Februari 2026 — forever and always</p>
+        </div>
+    </footer>
+
+    <!-- ==================== GALLERY LIGHTBOX ==================== -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup">&times;</button>
+        <div class="lightbox-content" id="lightbox-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
